@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CardManagement</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body style = "background-color: #202020" >
+      <%= image_tag("cards_pic.png", width: '100%') %>
+    <!--br></br -->
+    <%#= image_tag("disc brake.jpg", width: '150px', :style => "border: 1px solid red") %>
+    <!--br></br -->
+    <div style="color: green; font-weight: bold">
+      <% flash.each do |name, msg|%>
+        <%= msg %>
+      <% end %>
+    </div>  
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  card_name: MyString
+  card_number: MyString
+  string: MyString
+  card_balance: MyString
+  float: MyString
+  card_balance_date: MyString
+  datetime: MyString
+  card_min_payment: MyString
+  decimal(8, 4): MyString
+  card_apr: MyString
+  decimal(0, 4): MyString
+  card_priority: MyString
+  string: MyString
+  card_type: MyString
+  string: MyString
+  card_provider: MyString
+  string: MyString
+  card_expiry_date: MyString
+  datetime: MyString
+
+two:
+  card_name: MyString
+  card_number: MyString
+  string: MyString
+  card_balance: MyString
+  float: MyString
+  card_balance_date: MyString
+  datetime: MyString
+  card_min_payment: MyString
+  decimal(8, 4): MyString
+  card_apr: MyString
+  decimal(0, 4): MyString
+  card_priority: MyString
+  string: MyString
+  card_type: MyString
+  string: MyString
+  card_provider: MyString
+  string: MyString
+  card_expiry_date: MyString
+  datetime: MyString
