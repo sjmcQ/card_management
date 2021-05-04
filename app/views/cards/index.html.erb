@@ -1,0 +1,44 @@
+<h1>List Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number</th>
+      <th>Balance</th>
+      <th>Balance date</th>
+      <th>Min payment</th>
+      <th>APR</th>
+      <th>Priority</th>
+      <th>Type</th>
+      <th>Provider</th>
+      <th>Expiry date</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cards.each do |card| %>
+      <% number = card.card_number %>
+      <% first4 = number[0..3] %>
+      <% second4 = number[4..7] %>
+      <% third4 = number[8..11] %>
+      <% forth4 = number[12..16] %>
+      <% ccnumber = first4+' '+second4+' '+third4+' '+forth4 %>
+      <% cbdate = card.card_balance_date.strftime("%d/%m/%Y")%>
+      <% cedate = card.card_expiry_date.strftime("%-d/%-m/%Y")%>
+      <tr>
+        <td><%= card.card_name%><td>
+        <td><%= card.card_number%><td>
+        <td><%= card.card_balance%><td>
+        <td><%= cbdate %><td>
+        <td><%= card.card_min_payment%><td>
+        <td><%= card.card_apr%><td>
+        <td><%= card.card_priority%><td>
+        <td><%= card.card_type%><td>
+        <td><%= cedate %><td>
+        <td>Placeholder<td>  
+      </tr>
+    <% end %>
+  </tbody>
+</table>
