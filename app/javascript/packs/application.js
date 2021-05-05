@@ -2,8 +2,12 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
-
-import Rails from "@rails/ujs"
+//= require jquery3
+//= require jquery_ujs
+//= require popper
+//= require tether
+//=require bootstrap
+import bootstrap
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"

@@ -1,44 +1,40 @@
 <h1>List Cards</h1>
-
 <table>
-  <thead>
+  <% @cards.each do |card| %>
+    <% number = card.card_number %>
+    <% first4 = number[0..3] %>
+    <% second4 = number[4..7] %>
+    <% third4 = number[8..11] %>
+    <% forth4 = number[12..16] %>
+    <% a_card_number = first4+' '+second4+' '+third4+' '+forth4 %>
+    <% a_card_balance_date = card.card_balance_date.strftime("%d/%m/%Y")%>
+    <% a_card_expiry_date = card.card_expiry_date.strftime("%-d/%-m/%Y")%>
     <tr>
-      <th>Name</th>
-      <th>Number</th>
-      <th>Balance</th>
-      <th>Balance date</th>
-      <th>Min payment</th>
-      <th>APR</th>
-      <th>Priority</th>
-      <th>Type</th>
-      <th>Provider</th>
-      <th>Expiry date</th>
-      <th>Actions</th>
+      <th colspan="2">Name </th> 
+      <th colspan="2">Number</th>
+      <th colspan="2">Balance</th>
+      <th colspan="2">Balance date</th>
+      <th colspan="2">Min payment</th>
+      <th colspan="2">APR</th>
+      <th colspan="2">Priority</th>
+      <th colspan="2">Type</th>
+      <th colspan="2">Provider</th>
+      <th colspan="2">Expiry date</th> 
+      <th colspan="3">Actions</th> 
     </tr>
-  </thead>
-
-  <tbody>
-    <% @cards.each do |card| %>
-      <% number = card.card_number %>
-      <% first4 = number[0..3] %>
-      <% second4 = number[4..7] %>
-      <% third4 = number[8..11] %>
-      <% forth4 = number[12..16] %>
-      <% ccnumber = first4+' '+second4+' '+third4+' '+forth4 %>
-      <% cbdate = card.card_balance_date.strftime("%d/%m/%Y")%>
-      <% cedate = card.card_expiry_date.strftime("%-d/%-m/%Y")%>
-      <tr>
-        <td><%= card.card_name%><td>
-        <td><%= card.card_number%><td>
-        <td><%= card.card_balance%><td>
-        <td><%= cbdate %><td>
-        <td><%= card.card_min_payment%><td>
-        <td><%= card.card_apr%><td>
-        <td><%= card.card_priority%><td>
-        <td><%= card.card_type%><td>
-        <td><%= cedate %><td>
-        <td>Placeholder<td>  
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <tr>
+      <td><%=card.card_name%><td> 
+      <td><%=a_card_number%><td>
+      <td><%=card.card_balance%><td>
+      <td><%=a_card_balance_date%><td>
+      <td><%=card.card_min_payment%><td>
+      <td><%=card.card_apr%><td>
+      <td><%=card.card_priority%><td> 
+      <td><%=card.card_type%><td>
+      <td><%=card.card_provider%><td>
+      <td><%=a_card_expiry_date%><td>
+      <td>Placeholder<td> 
+    </tr>
+  <% end %>
+</table>  
+ 

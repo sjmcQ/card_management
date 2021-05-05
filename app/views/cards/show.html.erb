@@ -1,4 +1,4 @@
-require 'date' 
+
 <h1>Show Card Details&nbsp&nbsp id=(<%=@card.id%>)</h1>
 <head>
   <% number = @card.card_number %>
@@ -12,14 +12,19 @@ require 'date'
 </
 </head>
 <div style = "width: 35%">
-  <p><strong>Name . . . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_name %></p>
-  <p><strong>Number . . . . . :&nbsp&nbsp&nbsp  </strong><%= ccnumber %></p>
-  <p><strong>Balance. . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_balance %></p>
-  <p><strong>Balance date . . :&nbsp&nbsp&nbsp  </strong><%= cbdate %></p>
-  <p><strong>Min payment . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_min_payment %></p>
-  <p><strong>APR. . . . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_apr %></p>
-  <p><strong>Priority . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_priority %></p>
-  <p><strong>type . . . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_type %></p>
-  <p><strong>Provider . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_provider %></p>
-  <p><strong>Expiry date. . . :&nbsp&nbsp&nbsp  </strong><%= cedate %></p>
+<table>
+  <>
+  <tr>
+    <p><strong>Name . . . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_name %></p>
+    <p><strong>Number . . . . . :&nbsp&nbsp&nbsp  </strong><%= ccnumber %></p>
+    <p><strong>Balance. . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_balance %></p>
+    <p><strong>Balance date . . :&nbsp&nbsp&nbsp  </strong><%= cbdate %></p>
+    <p><strong>Min payment. . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_min_payment %></p>
+    <p><strong>APR. . . . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_apr %></p>
+    <p><strong>Priority . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_priority %></p>
+    <p><strong>type . . . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_type %></p>
+    <p><strong>Provider . . . . :&nbsp&nbsp&nbsp  </strong><%= @card.card_provider %></p>
+    <p><strong>Expiry date. . . :&nbsp&nbsp&nbsp  </strong><%= cedate %></p>
+  </tr>
+</table>
 </div>  

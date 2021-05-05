@@ -1,0 +1,56 @@
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: goldenrod;
+    letter-spacing: -1px;
+}
+
+p {
+    font-family: 'odudo mono', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: goldenrod;
+    letter-spacing: -1px;
+    margin: 1px;
+}
+
+table {
+    font-family: 'odudo mono', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    /*color: goldenrod;*/
+    letter-spacing: -1px;
+    margin: 2px;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    color: gold
+}
+
+h1 {
+    font-family: 'Calibri Light', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: goldenrod {
+        lightness: 50%
+    }
+    ;
+    letter-spacing: -1px;
+}
+
+a:hover {
+    background: goldenrod;
+    color: #202020;
+}
+
+p:hover {
+    background: goldenrod;
+    color: #202020;
+}
