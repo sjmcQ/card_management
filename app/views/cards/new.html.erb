@@ -1,0 +1,37 @@
+<h1>Create new card</h1>
+
+<%= form_with scope: :card, url: cards_path, local: true do |f| %>
+
+  <table> 
+    <tr>
+      <th colspan="2">Name</th>
+      <th colspan="2">Number</th>
+      <th colspan="2">Balance</th>
+      <th colspan="2">Balance date</th>
+      <th colspan="2">Min payment</th>
+      <th colspan="2">APR</th>
+      <th colspan="2">Priority</th>
+      <th colspan="2">Type</th>
+      <th colspan="2">Provider</th>
+      <th colspan="2">Expiry date</th> 
+    </tr>
+    <tr>
+      <td><%= f.text_field :card_name, size: 10 %><td> 
+      <td><%= f.text_field :card_number, size:16%><td>
+      <td><%= f.text_field :card_balance, size:6%><td>
+      <td><%= f.text_field :card_balance_date, size:8%><td>
+      <td><%= f.text_field :card_min_payment, size: 5%><td>
+      <td><%= f.text_field :card_apr, size: 5%><td>
+      <td><%= f.text_field :card_priority, size: 8%><td> 
+      <td><%= f.text_field :card_type, size: 10%><td>
+      <td><%= f.text_field :card_provider, size: 10%><td>
+      <td><%= f.text_field :card_expiry_date,size: 8%><td>
+    </tr>  
+  </table>
+  </br>
+  <p style = "margin-left: 15px">
+    <%= f.submit %>
+  </p>
+
+<% end %>
+
